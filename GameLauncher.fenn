@@ -10,7 +10,7 @@ target RGL() {
     var new.img.caption = database.description(new.img);
     new.xy = pos(abovecenter);
     var played = element.grid.flow(roundedbox, 13);
-    var played.img = inload.folder("/GameLauncher/assets/textures/recentlplayed");
+    var played.img = inload.folder("/GameLauncher/assets/textures/recentlyplayed");
     var played.img.caption = database.description(played.img);
     played.xy = pos(belowcenter);
     var footer = text("RagnowProductions GameLauncher is a free, open source, game hosting service for Fenn OS users.");
