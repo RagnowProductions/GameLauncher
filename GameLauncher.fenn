@@ -1,0 +1,16 @@
+target RGL() {
+    var GameLauncherHEADER = text("GameLauncher")
+    var fontTTF = inload.file("/GameLauncher/assets/font/gamelauncherinline-bold.ttf") 
+    GameLauncherHEADER.xy = pos(topleft)
+    GameLauncherHEADER.font = fontTTF  
+    var UploadButton = inload.file("/GameLauncher/assets/textures/buttons/upload.png")
+    UploadButton.onclick = link.app("/upload")
+    var new = element.grid.flow(roundedbox, 13)
+    var new.img = inload.folder("/GameLauncher/assets/textures/reccomended")
+    var new.img.caption = database.description(new.img)
+    new.xy = pos(abovecenter)
+    var played = element.grid.flow(roundedbox, 13)
+    var played.img = inload.folder("/GameLauncher/assets/textures/recentlplayed")
+    var played.img.caption = database.description(played.img)
+    played.xy = pos(belowcenter)
+}
